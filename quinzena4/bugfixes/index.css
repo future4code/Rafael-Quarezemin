@@ -133,3 +133,11 @@ td button {
 td {
     text-align: center;
 }
+
+.alterando-ao-mouse:hover {
+    background-color: #ffaf43;
+}
+
+.alterando-ao-mouse:active {
+    color: white
+}
