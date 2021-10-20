@@ -143,3 +143,9 @@ td {
 .alterando-ao-mouse:active {
     color: white;
 }
+
+.centralizando-tabela {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
