@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(247, 68, 68);
+}
+
+header {
+    background-color: rgb(89, 41, 134);
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+.redes-sociais {
+    width: 45px;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(23, 92, 92);
+}
+
+.estoque {
+    border: solid;
+    text-align: center;
+} 
+
+.alinhando {
+    width: 50%;
+    margin: auto;
+}
+
+td {
+    border: solid;
+    text-align: center;
+}
+
+th {
+    border: solid;
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+li {
+   list-style-type: upper-roman;
+}
+
+ul {
+    display:inline-block
+}
