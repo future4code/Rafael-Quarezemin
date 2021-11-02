@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page-grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+header {
+    background-color: mediumvioletred;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    padding: 0 20px;
+    height: 70px;
+    justify-content: start;
+    align-content: center;
+}
+
+nav { 
+    display: grid;
+    height: 20vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.icones {
+    max-height: 25px;
+}
+
+img {
+    max-height: 230px;
+}
+
+main {
+    background-color: #f2d0e0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+section {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: start;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+nav {
+    background-color: #f2d0e0;
+}
+
+footer {
+    display: grid;
+    background-color: mediumvioletred;
+    align-content: center;
+    justify-content: center;
+}
+
+button {
+    background-color: lightgray;
+    justify-self: end;
+    padding: 0 10px;
+}
+
+h1 {
+    justify-self: start;
+}
+
+h3 {
+    text-align: center;
+}
+
+.classebolo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px darkgray;
+    text-align: center;
+}
+
+.menu-lateral {
+    display: grid;
+    grid-template-columns: 40px 1fr 36px;
+    justify-items: start;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.foto-bolao {
+    width: 100%;
+}
+
+p {
+    margin-bottom: 10px;
+}
