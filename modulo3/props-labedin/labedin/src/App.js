@@ -18,7 +18,7 @@ function App() {
         <CardGrande 
           imagem={FotoPerfil}
           nome="Rafael Blasques Quarezemin" 
-          descricao="Experiências anteriores muito voltadas para o mercado financeiro. Foco atual na mudança de carreira. Estudante Web Full Stack na Labenu."
+          descricao="Foco atual na mudança de carreira. Estudante Web Full Stack na Labenu."
         />
         
         <ImagemButton 
