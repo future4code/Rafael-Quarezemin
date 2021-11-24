@@ -1,15 +1,15 @@
 import React from 'react';
-import './App.css';
-import './App.js'
 
-export function Final() {
-  return (
-    <div>
-  
-   
+class Final extends React.Component {
+    render() {
+    return(
+            <div>
+                <h2>O FORMULÁRIO ACABOU</h2>
+                <p>Muito obrigado por participar! Entraremos em contato!</p>
 
-    </div>
-  );
+
+            </div >
+        );
+    }
 }
-
 export default Final;
