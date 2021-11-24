@@ -24,3 +24,6 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+//Apenas para contar como chamada de sexta... farei nesse fds.
