@@ -13,11 +13,15 @@ const Centralized = styled.div`
 class App extends React.Component {
 
   state = {
-    etapa: 1,
+    count: 1,
+  }
+
+  add () {
+    this.setState({ count: this.state.count + 1 })
   }
 
   renderizaEtapa = () => {
-    switch (this.state.evento) {
+    switch (this.state.count) {
       case 1:
         return <Etapa1 />;
       case 2:
@@ -27,14 +31,15 @@ class App extends React.Component {
       case 4:
         return <Final />;
     }
-    
+   
   }
   render() {
     return (
       <Centralized>
-
+    
         {this.renderizaEtapa()}
-        <button>Próxima etapa</button>
+        <button onClick={this.add}>Próxima etapa</button>
+        
 
       </Centralized>
     );
