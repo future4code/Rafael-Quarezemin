@@ -16,10 +16,6 @@ class App extends React.Component {
     count: 1,
   }
 
-  add () {
-    this.setState({ count: this.state.count + 1 })
-  }
-
   renderizaEtapa = () => {
     switch (this.state.count) {
       case 1:
@@ -30,16 +26,22 @@ class App extends React.Component {
         return <Etapa3 />;
       case 4:
         return <Final />;
+      default:
+        return <Final />;
     }
-   
   }
+
+  add = () => {
+    this.setState({ count: this.state.count + 1 })
+  }
+
   render() {
     return (
       <Centralized>
-    
+
         {this.renderizaEtapa()}
         <button onClick={this.add}>Próxima etapa</button>
-        
+
 
       </Centralized>
     );
