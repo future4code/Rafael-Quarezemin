@@ -1,0 +1,840 @@
+{
+	"info": {
+		"_postman_id": "fdf10cf6-4b9c-4889-8d80-d97a7e6f6c82",
+		"name": "Labefy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Playlists",
+			"item": [
+				{
+					"name": "createPlaylist 1 - Rock Nacional",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rock Nacional\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlaylist 2 - Rock Internacional",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rock Internacional\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlaylist 3 - Pisadinha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pisadinha\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistTracks - Pisadinha",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "6aa24e3d-ae53-44b7-9375-12e206ee48b4",
+									"description": "Pisadinha"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistTracks - Rock Internacional",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistTracks - Rock Nacional",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "32e3500f-33a1-4712-9d6f-f7c1fd80799f",
+									"description": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchPlaylist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=Rock Nacional",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tracks",
+			"item": [
+				{
+					"name": "addTrackToPlaylist - The Doors",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Roadhouse Blues\", \r\n    \"artist\": \"The Doors\",\r\n    \"url\": \"https://www.youtube.com/watch?v=n2_X4VTCoEo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Elton John",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sacrifice\", \r\n    \"artist\": \"Elton John\",\r\n    \"url\": \"https://www.youtube.com/watch?v=NrLkTZrPZA4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Cazuza",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"O Tempo Não Para\", \r\n    \"artist\": \"Cazuza\",\r\n    \"url\": \"https://www.youtube.com/watch?v=_Jcn10Iiuu4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "32e3500f-33a1-4712-9d6f-f7c1fd80799f",
+									"description": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Raul Seixas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ouro De Tolo\", \r\n    \"artist\": \"Raul Seixas\",\r\n    \"url\": \"https://www.youtube.com/watch?v=Kc9OO1VVGyU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "32e3500f-33a1-4712-9d6f-f7c1fd80799f",
+									"description": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Os Barões da Pisadinha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tá Rocheda\", \r\n    \"artist\": \"Os Barões da Pisadinha\",\r\n    \"url\": \"https://www.youtube.com/watch?v=kNdIA-L8E3c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "6aa24e3d-ae53-44b7-9375-12e206ee48b4",
+									"description": "Pisadinha"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Os barões da Pisadinha 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Esquema Preferido\", \r\n    \"artist\": \"Os Barões da Pisadinha\",\r\n    \"url\": \"https://www.youtube.com/watch?v=TCLGN6m6AMI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "6aa24e3d-ae53-44b7-9375-12e206ee48b4",
+									"description": "Pisadinha"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Raul Seixas 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Maluco Beleza\", \r\n    \"artist\": \"Raul Seixas\",\r\n    \"url\": \"https://www.youtube.com/watch?v=01WCtTBNLfk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "32e3500f-33a1-4712-9d6f-f7c1fd80799f",
+									"description": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Cazuza 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Exagerado\", \r\n    \"artist\": \"Cazuza\",\r\n    \"url\": \"https://www.youtube.com/watch?v=KmVmoHg9zuU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "32e3500f-33a1-4712-9d6f-f7c1fd80799f",
+									"description": "Rock Nacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - Queen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bohemian Rhapsody\", \r\n    \"artist\": \"Queen\",\r\n    \"url\": \"https://www.youtube.com/watch?v=fJ9rUzIMcZQ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeTrackFromPlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks",
+								":trackId"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								},
+								{
+									"key": "trackId",
+									"value": "a6df2d16-9a53-4ad9-ab6e-d655bdf98b9a",
+									"description": "Bohemian Rhapsody - Queen"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - AC/DC",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Highway to Hell\", \r\n    \"artist\": \"AC/DC\",\r\n    \"url\": \"https://www.youtube.com/watch?v=gEPmA3USJdI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTrackToPlaylist - AC/DC 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "rafael-quarezemin-joy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Thunderstruck\", \r\n    \"artist\": \"AC/DC\",\r\n    \"url\": \"https://www.youtube.com/watch?v=v2AC41dglnM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "2b7cf2a9-503e-4dbe-895f-baa7b28deec0",
+									"description": "Rock Internacional"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
