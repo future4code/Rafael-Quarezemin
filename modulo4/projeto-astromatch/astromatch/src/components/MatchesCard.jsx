@@ -23,17 +23,14 @@ function MatchesCard(props) {
     return (
 
         <ContainerCard>
-        <TopCard>
+            <TopCard>
                 <img src={astroMatch} />
-                <IconMatches src={returnIcon} />
+                <IconMatches 
+                onClick={props.goToCard} 
+                src={returnIcon} />
                 <br/>
             </TopCard>
-         
-
-
         </ContainerCard>
-
-
     )
 }
 
