@@ -10,9 +10,9 @@ const ContainerCard = styled.div`
     border: 2px solid black;
     padding: 10px;
     width: 250px;
-    height: 480px;
+    height: 520px;
     background-color: white;
-    text-align: center
+    text-align: center;
 `
 const CharacterPhoto = styled.img`
     width: 250px;
@@ -21,11 +21,11 @@ const CharacterPhoto = styled.img`
 `
 const TopCard = styled.div`
     display: grid;
-    grid-template-columns: 1fr 50px
+    grid-template-columns: 1fr 50px;
 `
 const BottonCard = styled.div`
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 `
 const IconMatches = styled.img`
     width: 35px;
@@ -47,7 +47,7 @@ function Card(props) {
                 <br/>
             </TopCard>
 
-            <CharacterPhoto src={ribamar} />
+            <CharacterPhoto src={props.photo} />
             <h3>{props.name}, {props.age}</h3>
             <p>{props.description}</p>
             
