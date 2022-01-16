@@ -19,7 +19,7 @@ function App() {
 
   const [whichCard, setWhichCard] = useState("Card")
   const [NewProfile, setNewProfile] = useState({})
-  const [NewGetMatches, setNewGetMatches] = useState({})
+  // const [NewGetMatches, setNewGetMatches] = useState({})
 
   const goToMatches = () => {
     setWhichCard("matches")
@@ -39,6 +39,7 @@ function App() {
   //   .then((response) => setNewProfile(response.data))
   // }
 
+ 
   useEffect(() => {
     getProfile()
   }, [])
