@@ -1,0 +1,13 @@
+{
+  "name": "2-Exercicio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "countries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "search-country-by-name": "node countries.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
